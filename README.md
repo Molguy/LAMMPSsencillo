@@ -20,8 +20,8 @@ Abrimos el folder que renombramos y en un espacio en blanco donde el puntero no 
 
 # **Paso 4.**
 En la terminal acederemos, y compilaremos las herramientas de lammps de forma manual.
-1 El siguiente comando crea y te ubica en el folder "build"
 
+1 El siguiente comando crea y te ubica en el folder "build"
 
     cd ~/lammps/build
 
@@ -76,4 +76,6 @@ En la terminal acederemos, y compilaremos las herramientas de lammps de forma ma
      source ~/.bashrc
 
 
-# **Paso 5.**
+# **Listo**
+
+Reinicie su equipo para aplicar cambios, para este punto LAMMPS ha sido instalado de forma personalizada pero con las utilerias suficientes para funcionar.
