@@ -13,7 +13,7 @@ Abra el archivo recien descargado y deposite el folder a su ruta local desde el 
 
     \\wsl.localhost\Ubuntuversion*\home\username*\
 
-renombre el folder _lammps-develop_ a solo *lammps*
+renombre el folder _"lammps-develop"_ a solo *"lammps"*
 
 # **Paso 3.**
 Abrimos el folder que renombramos y en un espacio en blanco donde el puntero no le de sombra a algun folder o archivo, presionamos shift + click derecho y presionar **L** para seleccionar _Abrir shell de Linux aqui_ 
@@ -23,7 +23,7 @@ En la terminal acederemos, y compilaremos las herramientas de lammps de forma ma
 
     cd ~/lammps/build
 
-
+    
     cmake ../cmake -D BUILD_MPI=on -D BUILD_OMP=on -D LAMMPS_EXCEPTIONS=yes \
       -D CMAKE_INSTALL_PREFIX=/usr/local/lammps \
       -D LAMMPS_MACHINE=mpi -D LAMMPS_MACHINE=serial \
@@ -52,18 +52,18 @@ En la terminal acederemos, y compilaremos las herramientas de lammps de forma ma
      -D PKG_USER-VTK=on \
      -D PKG_USER-COLVARS=on
 
-
+     
      make -j$(nproc)
 
-
+     
      sudo make install
 
-
+     
      ls /usr/local/lammps/bin/lmp*
 
-
+     
      echo 'export PATH=/usr/local/lammps/bin:$PATH' >> ~/.bashrc
 
-
+     
      source ~/.bashrc
 
