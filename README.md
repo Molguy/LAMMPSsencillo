@@ -21,8 +21,9 @@ Abrimos el folder que renombramos y en un espacio en blanco donde el puntero no 
 # **Paso 4.**
 En la terminal acederemos, y compilaremos las herramientas de lammps de forma manual
 
-    cd ~/lammps/build
 
+    cd ~/lammps/build
+te crea y te ubica en el folder "build"
     
     cmake ../cmake -D BUILD_MPI=on -D BUILD_OMP=on -D LAMMPS_EXCEPTIONS=yes \
       -D CMAKE_INSTALL_PREFIX=/usr/local/lammps \
