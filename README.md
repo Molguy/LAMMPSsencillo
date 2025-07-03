@@ -23,6 +23,7 @@ En la terminal acederemos, y compilaremos las herramientas de lammps de forma ma
 
     cd ~/lammps/build
 
+
     cmake ../cmake -D BUILD_MPI=on -D BUILD_OMP=on -D LAMMPS_EXCEPTIONS=yes \
       -D CMAKE_INSTALL_PREFIX=/usr/local/lammps \
       -D LAMMPS_MACHINE=mpi -D LAMMPS_MACHINE=serial \
@@ -50,14 +51,19 @@ En la terminal acederemos, y compilaremos las herramientas de lammps de forma ma
      -D PKG_USER-CGDNA=on \
      -D PKG_USER-VTK=on \
      -D PKG_USER-COLVARS=on
-    
+
+
      make -j$(nproc)
+
 
      sudo make install
 
+
      ls /usr/local/lammps/bin/lmp*
 
+
      echo 'export PATH=/usr/local/lammps/bin:$PATH' >> ~/.bashrc
+
 
      source ~/.bashrc
 
